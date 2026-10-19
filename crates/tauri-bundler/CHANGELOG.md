@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.10.4]
+
+### Bug Fixes
+
+- [`52081e04a`](https://www.github.com/tauri-apps/tauri/commit/52081e04a0309620d3eb8121e5ca9b66312f9857) ([#16333](https://www.github.com/tauri-apps/tauri/pull/16333) by [@amrbashir](https://www.github.com/tauri-apps/tauri/../../amrbashir)) Rename the misspelled `choowHowToInstall` NSIS language string to `chooseHowToInstall`. A custom language file in `bundle.windows.nsis.customLanguageFiles` that only defines the old name keeps working for now, but users should migrate to the new name.
+- [`1a02ec364`](https://www.github.com/tauri-apps/tauri/commit/1a02ec36401de1f5eafe99fd6a8b45d3a1356993) ([#16330](https://www.github.com/tauri-apps/tauri/pull/16330) by [@lazerg](https://www.github.com/tauri-apps/tauri/../../lazerg)) Quote the executable path in the file association `shell\open\command` and `DefaultIcon` registry values written by the NSIS installer, so opening an associated file no longer depends on how Windows splits an unquoted path that contains spaces.
+- [`c0e3dbd91`](https://www.github.com/tauri-apps/tauri/commit/c0e3dbd91def4b2c39fc7cca03f0b86407e9d584) ([#16254](https://www.github.com/tauri-apps/tauri/pull/16254) by [@kihyun1998](https://www.github.com/tauri-apps/tauri/../../kihyun1998)) Fix NSIS installers not blocking downgrades over a newer installation made by the MSI installer in silent (`/S`), passive (`/P`) and update (`/UPDATE`) modes when `bundle.windows.allowDowngrades` is `false`.
+
+### Dependencies
+
+- Upgraded to `tauri-macos-sign@2.4.3`
+
 ## [2.10.3]
 
 ### Bug Fixes

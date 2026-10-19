@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.12.3]
+
+### Dependencies
+
+- [`1d7b93fc5`](https://www.github.com/tauri-apps/tauri/commit/1d7b93fc5927c013e20613e45e7b84602efb0ee9) ([#16321](https://www.github.com/tauri-apps/tauri/pull/16321) by [@FalkWoldmann](https://www.github.com/tauri-apps/tauri/../../FalkWoldmann)) Replace `once_cell` with the `std::sync` equivalents, removing it from the direct dependencies.
+
 ## [2.12.2]
 
 ### Dependencies

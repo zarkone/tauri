@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.12.4]
+
+### Bug Fixes
+
+- [`136a28eaa`](https://www.github.com/tauri-apps/tauri/commit/136a28eaa879e8aa706f9b2e05a050c46dcc1f4f) ([#16305](https://www.github.com/tauri-apps/tauri/pull/16305) by [@Chaosnico9000](https://www.github.com/tauri-apps/tauri/../../Chaosnico9000)) Skip the `--target` validation when `rustup target list` fails, e.g. when `rustup` is on `PATH` but has no toolchain installed, instead of rejecting every target as missing.
+- [`52081e04a`](https://www.github.com/tauri-apps/tauri/commit/52081e04a0309620d3eb8121e5ca9b66312f9857) ([#16333](https://www.github.com/tauri-apps/tauri/pull/16333) by [@amrbashir](https://www.github.com/tauri-apps/tauri/../../amrbashir)) Rename the misspelled `choowHowToInstall` NSIS language string to `chooseHowToInstall`. A custom language file in `bundle.windows.nsis.customLanguageFiles` that only defines the old name keeps working for now, but users should migrate to the new name.
+
+### Dependencies
+
+- Upgraded to `tauri-macos-sign@2.4.3`
+- Upgraded to `tauri-bundler@2.10.4`
+
 ## [2.12.3]
 
 ### Enhancements

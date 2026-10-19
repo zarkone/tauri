@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.12.5]
+
+### Bug Fixes
+
+- [`52081e04a`](https://www.github.com/tauri-apps/tauri/commit/52081e04a0309620d3eb8121e5ca9b66312f9857) ([#16333](https://www.github.com/tauri-apps/tauri/pull/16333) by [@amrbashir](https://www.github.com/tauri-apps/tauri/../../amrbashir)) Rename the misspelled `choowHowToInstall` NSIS language string to `chooseHowToInstall`. A custom language file in `bundle.windows.nsis.customLanguageFiles` that only defines the old name keeps working for now, but users should migrate to the new name.
+- [`c0e3dbd91`](https://www.github.com/tauri-apps/tauri/commit/c0e3dbd91def4b2c39fc7cca03f0b86407e9d584) ([#16254](https://www.github.com/tauri-apps/tauri/pull/16254) by [@kihyun1998](https://www.github.com/tauri-apps/tauri/../../kihyun1998)) Fix NSIS installers not blocking downgrades over a newer installation made by the MSI installer in silent (`/S`), passive (`/P`) and update (`/UPDATE`) modes when `bundle.windows.allowDowngrades` is `false`.
+
+### Dependencies
+
+- Upgraded to `tauri-runtime-wry@2.12.3`
+
 ## [2.12.4]
 
 ### Enhancements
